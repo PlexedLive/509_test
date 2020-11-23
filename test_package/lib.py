@@ -47,6 +47,10 @@ def clean_data(data):
     data.loc[:, 'Frequency'] = data['Frequency'].map(drows)
     return data
 
+def try_me():
+    print('Hi guys! Go here for dank data science tips: https://bit.ly/36XleHn')
+    print('🚀🚀🚀🚀🚀🚀🚀')
+
 
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
