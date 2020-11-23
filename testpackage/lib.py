@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # Copyright (C) 2018 Jean Bizot <jean@styckr.io>
-""" Main lib for test_package Project
+""" Main lib for testpackage Project
 """
 
 from os.path import split
@@ -54,8 +54,8 @@ def try_me():
 
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
-    import test_package
-    folder_source, _ = split(test_package.__file__)
+    import testpackage
+    folder_source, _ = split(testpackage.__file__)
     df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
     clean_data = clean_data(df)
     print(' dataframe cleaned')

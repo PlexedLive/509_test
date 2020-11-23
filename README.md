@@ -1,5 +1,5 @@
 # Data analysis
-- Document here the project: test_package
+- Document here the project: testpackage
 - Description: Project Description
 - Data Source:
 - Type of analysis:
@@ -22,15 +22,15 @@ Unittest test:
   $ make clean install test
 ```
 
-Check for test_package in gitlab.com/{group}.
+Check for testpackage in gitlab.com/{group}.
 If your project is not set please add it:
 
-- Create a new project on `gitlab.com/{group}/test_package`
+- Create a new project on `gitlab.com/{group}/testpackage`
 - Then populate it:
 
 ```bash
-  $ ##   e.g. if group is "{group}" and project_name is "test_package"
-  $ git remote add origin git@gitlab.com:{group}/test_package.git
+  $ ##   e.g. if group is "{group}" and project_name is "testpackage"
+  $ git remote add origin git@gitlab.com:{group}/testpackage.git
   $ git push -u origin master
   $ git push -u origin --tags
 ```
@@ -38,10 +38,10 @@ If your project is not set please add it:
 Functionnal test with a script:
 ```bash
   $ cd /tmp
-  $ test_package-run
+  $ testpackage-run
 ```
 # Install
-Go to `gitlab.com/{group}/test_package` to see the project, manage issues,
+Go to `gitlab.com/{group}/testpackage` to see the project, manage issues,
 setup you ssh public key, ...
 
 Create a python3 virtualenv and activate it:
@@ -52,19 +52,19 @@ Create a python3 virtualenv and activate it:
 
 Clone the project and install it:
 ```bash
-  $ git clone gitlab.com/{group}/test_package
-  $ cd test_package
+  $ git clone gitlab.com/{group}/testpackage
+  $ cd testpackage
   $ pip install -r requirements.txt
   $ make clean install test                # install and test
 ```
 Functionnal test with a script:
 ```bash
   $ cd /tmp
-  $ test_package-run
-``` 
+  $ testpackage-run
+```
 
 # Continus integration
-## Github 
+## Github
 Every push of `master` branch will execute `.github/workflows/pythonpackages.yml` docker jobs.
 ## Gitlab
 Every push of `master` branch will execute `.gitlab-ci.yml` docker jobs.

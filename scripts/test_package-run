@@ -6,9 +6,9 @@ from os.path import split
 import argparse
 import pandas as pd
 
-# Import from test_package
-import test_package
-from test_package.lib import try_me
+# Import from testpackage
+import testpackage
+from testpackage.lib import try_me
 
 if __name__ == '__main__':
     try_me()
