@@ -49,7 +49,7 @@ def clean_data(data):
 
 def try_me():
     print('Hi guys! Go here for dank data science tips: https://bit.ly/36XleHn')
-    print('🚀🚀🚀🚀🚀🚀🚀')
+    print('Rocket emoji - windows gave me an error')
 
 
 if __name__ == '__main__':
